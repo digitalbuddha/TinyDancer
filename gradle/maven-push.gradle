@@ -1,6 +1,7 @@
 apply plugin: "maven"
 apply plugin: "signing"
-
+println("USERNAME")
+println(SONATYPE_USERNAME)
 def isReleaseBuild() {
     return VERSION_NAME.contains("SNAPSHOT") == false
 }
