@@ -9,6 +9,8 @@ android:
   - android-26
   - extra-android-m2repository
 script:
+- echo $SONATYPE_USERNAME
+- echo $SONATYPE_PASSWORD
 - "./gradlew clean assembleDebug testDebug --stacktrace"
 branches:
   except:
